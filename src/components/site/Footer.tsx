@@ -1,5 +1,7 @@
-import { Mail, MessageCircle, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
+import whatsAppLogo from "@/assets/whatsapp-logo.svg";
 import { WHATSAPP_URL } from "./Header";
+
 
 export function Footer() {
   return (
@@ -57,8 +59,13 @@ export function Footer() {
                   rel="noreferrer"
                   className="flex items-start gap-3 text-white/70 transition-colors hover:text-gold"
                 >
-                  <MessageCircle className="mt-0.5 h-4 w-4 text-gold" />
+                  <img
+                    src={whatsAppLogo}
+                    alt="Logo WhatsApp"
+                    className="mt-0.5 h-4 w-4"
+                  />
                   WhatsApp
+
                 </a>
               </li>
               <li>
