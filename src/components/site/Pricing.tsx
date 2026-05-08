@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
-import { Check, Minus, Crown, Sparkles, MessageCircle } from "lucide-react";
+import { Check, Minus, Crown, Sparkles } from "lucide-react";
 import { Reveal, SectionEyebrow } from "./Reveal";
+import whatsAppLogo from "@/assets/whatsapp-logo.svg";
 
 type Audience = "servicos" | "comercio";
 
@@ -253,7 +254,7 @@ export function Pricing() {
                         : "bg-primary text-primary-foreground hover:shadow-elegant"
                     }`}
                   >
-                    <MessageCircle className="h-4 w-4" />
+                    <img src={whatsAppLogo} alt="WhatsApp" className="h-4 w-4" />
                     {p.cta}
                   </a>
 
@@ -380,7 +381,7 @@ export function Pricing() {
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full gradient-gold px-7 py-3.5 text-sm font-semibold text-navy-deep shadow-gold transition-transform duration-300 hover:scale-[1.03]"
             >
-              <MessageCircle className="h-4 w-4" />
+              <img src={whatsAppLogo} alt="WhatsApp" className="h-4 w-4" />
               Falar no WhatsApp
             </a>
           </div>

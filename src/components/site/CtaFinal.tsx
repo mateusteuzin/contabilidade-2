@@ -1,6 +1,7 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { WHATSAPP_URL } from "./Header";
 import { Reveal } from "./Reveal";
+import whatsAppLogo from "@/assets/whatsapp-logo.svg";
 
 export function CtaFinal() {
   return (
@@ -32,7 +33,7 @@ export function CtaFinal() {
               rel="noreferrer"
               className="group inline-flex items-center gap-2 rounded-full gradient-gold px-8 py-4 text-sm font-semibold text-navy-deep shadow-gold transition-transform duration-300 hover:scale-[1.03]"
             >
-              <MessageCircle className="h-4 w-4" />
+              <img src={whatsAppLogo} alt="WhatsApp" className="h-4 w-4" />
               Falar no WhatsApp
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>

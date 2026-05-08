@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import whatsAppLogo from "@/assets/whatsapp-logo.svg";
 
 const WHATSAPP_URL = "https://wa.me/5511999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20a%20Prime%20Contabilidade.";
 
@@ -68,7 +69,7 @@ export function Header() {
             rel="noreferrer"
             className="hidden items-center gap-2 rounded-full gradient-gold px-5 py-2.5 text-sm font-semibold text-navy-deep shadow-gold transition-transform duration-300 hover:scale-[1.03] md:inline-flex"
           >
-            <MessageCircle className="h-4 w-4" />
+            <img src={whatsAppLogo} alt="WhatsApp" className="h-4 w-4" />
             Falar no WhatsApp
           </a>
 
@@ -102,7 +103,7 @@ export function Header() {
                 rel="noreferrer"
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-full gradient-gold px-5 py-2.5 text-sm font-semibold text-navy-deep"
               >
-                <MessageCircle className="h-4 w-4" />
+                <img src={whatsAppLogo} alt="WhatsApp" className="h-4 w-4" />
                 Falar no WhatsApp
               </a>
             </nav>
